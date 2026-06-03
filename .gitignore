@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+env/
+.venv/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+.ipynd_checkpoints/
+*ipynd_checkpoints
+*.text=auto
+*.ipynd text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
