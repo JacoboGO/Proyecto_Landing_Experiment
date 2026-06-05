@@ -1,250 +1,114 @@
-# 📊 Experimento A/B en Landing Page
+\# 📊 Optimización de Tasa de Conversión en Landing Page mediante Experimentación A/B
 
-# 
 
-# 📑 Tabla de Contenidos
 
-# 📌 Descripción del Proyecto
+\[!\[Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 
-# 🎯 Objetivo
+\[!\[SQL](https://img.shields.io/badge/SQL-Análisis\_de\_Datos-orange.svg)](https://en.wikipedia.org/wiki/SQL)
 
-# 🧠 Problema de Negocio
+\[!\[Data-Driven\_Decisions](https://img.shields.io/badge/Decisiones-Basadas\_en\_Datos-green.svg)](https://en.wikipedia.org/wiki/A/B\_testing)
 
-# 🛠️ Tecnologías Utilizadas
 
-# 📂 Estructura del Proyecto
 
-# ⚙️ Instalación y Configuración
+\## 📑 Tabla de Contenidos
 
-# 🚀 Uso del Proyecto
+1\. \[🧠 Contexto de Negocio](#-contexto-de-negocio)
 
-# 📊 Proceso de Análisis
+2\. \[🎯 Objetivos](#-objetivos)
 
-# 📈 Resultados e Insights
+3\. \[🛠️ Stack Tecnológico](#️-stack-tecnológico)
 
-# 🔄 Control de Versiones
+4\. \[🔄 Flujo del Proyecto (Pipeline)](#-flujo-del-proyecto-pipeline)
 
-# 📌 Mejoras Futuras
+5\. \[📁 Estructura de Archivos](#-estructura-de-archivos)
 
-# 👨‍💻 Autor
+6\. \[🚀 Reproducibilidad](#-reproducibilidad)
 
-# 📄 Licencia
+7\. \[📈 Resultados e Insights Clave](#-resultados-e-insights-clave)
 
-# 📌 Descripción del Proyecto
+8\. \[💻 Buenas Prácticas Aplicadas](#-buenas-prácticas-aplicadas)
 
-# 
+9\. \[🔮 Mejoras Futuras](#-mejoras-futuras)
 
-# Este proyecto analiza un experimento A/B realizado sobre una página de inicio (Landing Page) con el objetivo de evaluar cuál versión genera mejores resultados de negocio.
+10\. \[👤 Autor y Contacto](#-autor-contacto)
 
-# 
 
-# Se compararon las versiones A y B utilizando métricas de conversión y gasto promedio por usuario para apoyar una decisión basada en datos y estadística inferencial.
 
-# 
+\---
 
-# El análisis fue desarrollado utilizando Python y herramientas de análisis de datos dentro de Jupyter Notebook.
 
-# 
 
-# 🎯 Objetivo
+\## 🧠 Contexto de Negocio
 
-# 
+En el entorno digital, el rendimiento de la página de inicio (landing page) es un factor crítico que impacta directamente el costo de adquisición de clientes y la rentabilidad. \[cite\_start]Este proyecto evalúa un \*\*experimento A/B\*\* implementado en dos versiones de la página de inicio (versión \*\*A\*\* y versión \*\*B\*\*) para mitigar fugas de tráfico, optimizar presupuestos de marketing y maximizar el retorno de inversión (ROI) a través de un enfoque riguroso de ingeniería y análisis de datos\[cite: 43, 61]. \[cite\_start]Tomar una decisión incorrecta podría traducirse en pérdidas financieras o en una disminución del volumen de ingresos proyectados\[cite: 69].
 
-# Determinar si existen diferencias estadísticamente significativas entre las versiones A y B de la landing page respecto a:
 
-# 
 
-# Tasa de conversión
+\---
 
-# Gasto promedio por usuario
 
-# Rendimiento por segmento
 
-# Impacto potencial en métricas de negocio
+\## 🎯 Objetivos
 
-# 🧠 Problema de Negocio
+\* \[cite\_start]\*\*Explorar y validar los datos\*\* garantizando su integridad y la ausencia de duplicados perjudiciales para los modelos de contraste estadístico\[cite: 1, 14].
 
-# 
+\* \[cite\_start]\*\*Evaluar el rendimiento financiero\*\* comparando el gasto promedio por usuario entre la versión A y la versión B\[cite: 1].
 
-# El equipo de marketing digital necesita decidir qué versión de la landing page implementar en producción.
+\* \[cite\_start]\*\*Medir la efectividad relativa\*\* comparando la tasa de conversión entre ambas variantes de diseño\[cite: 1].
 
-# 
+\* \[cite\_start]\*\*Analizar el comportamiento demográfico y de adquisición\*\* determinando el impacto de la fuente de tráfico y el tipo de usuario sobre la tasa de conversión final\[cite: 1].
 
-# Una mala decisión podría impactar negativamente:
 
-# 
 
-# conversiones,
+\---
 
-# ingresos,
 
-# adquisición de clientes,
 
-# experiencia de usuario.
+\## 🛠️ Stack Tecnológico
 
-# 
+| Tecnología | Uso en el Proyecto |
 
-# Por ello, se realizó un análisis estadístico para reducir la toma de decisiones basada en intuición y aumentar la confianza mediante evidencia cuantitativa.
+| :--- | :--- |
 
-# 
+| \*\*Python\*\* | \[cite\_start]Limpieza de datos, análisis exploratorio (EDA), pruebas estadísticas robustas y visualización\[cite: 48, 72]. |
 
-# 🛠️ Tecnologías Utilizadas
+| \*\*Pandas\*\* | \[cite\_start]Carga, manipulación de tipos de datos (`datetime`) y estructuración de tablas agregadas\[cite: 4, 48]. |
 
-# Tecnología	Uso
+| \*\*SciPy \& Statsmodels\*\* | \[cite\_start]Ejecución de pruebas estadísticas avanzadas (`ttest\_ind`, `proportions\_ztest`, `chi2\_contingency`)\[cite: 14, 16]. |
 
-# Python	Análisis de datos
+| \*\*Seaborn \& Matplotlib\*\* | \[cite\_start]Construcción de gráficos de distribución y barras normalizadas de conversión para la toma de decisiones de negocio. |
 
-# Pandas	Manipulación de datos
 
-# NumPy	Operaciones numéricas
 
-# Matplotlib	Visualización
+\---
 
-# Seaborn	Visualización estadística
 
-# SciPy	Pruebas estadísticas
 
-# Jupyter Notebook	Desarrollo del análisis
+\## 🔄 Flujo del Proyecto (Pipeline)
 
-# Git	Control de versiones
+```text
 
-# Git Bash	Gestión de commits y versionamiento
+Data Extraction (.csv) ➔ Data Validation \& Cleaning (Python/Pandas) ➔ Statistical Testing (SciPy) ➔ Business Insights \& Visualization (Seaborn)
 
-# GitHub	Publicación y portafolio
+📁 Estructura de ArchivosPlaintext├── data/
 
-# 
+│   └── landing\_experiment.csv     # Conjunto de datos con 40,000 registros de usuarios.
 
-# El notebook contiene:
+├── notebooks/
 
-# 
+│   └── Landing\_Experiment.ipynb   # Jupyter Notebook con el análisis y pruebas estadísticas.
 
-# limpieza de datos,
+└── README.md                      # Documentación ejecutiva del proyecto.
 
-# análisis exploratorio,
+🚀 ReproducibilidadClonar el repositorio:Bashgit clone \[https://github.com/JacoboGO/Proyecto\_Landing\_Experiment.git](https://github.com/JacoboGO/Proyecto\_Landing\_Experiment.git)
 
-# visualizaciones,
+cd Proyecto\_Landing\_Experiment
 
-# pruebas estadísticas,
+Crear e instalar el entorno virtual (venv):Bashpython -bin venv venv
 
-# interpretación de resultados,
+source venv/bin/activate  # En Windows usar: venv\\Scripts\\activate
 
-# conclusiones de negocio.
+Instalar las dependencias del proyecto:Bashpip install -r requirements.txt
 
-# 📊 Proceso de Análisis
-
-# 
-
-# El flujo del proyecto incluyó:
-
-# 
-
-# Carga y exploración del dataset.
-
-# Limpieza y validación de datos.
-
-# Análisis exploratorio (EDA).
-
-# Comparación entre grupos A y B.
-
-# Visualización de métricas clave.
-
-# Aplicación de pruebas estadísticas:
-
-# Welch’s T-Test
-
-# análisis de significancia estadística
-
-# Interpretación de resultados.
-
-# Conclusiones orientadas a negocio.
-
-# 📈 Resultados e Insights
-
-# Principales Hallazgos
-
-# Se identificaron diferencias relevantes entre las versiones A y B.
-
-# La prueba estadística permitió evaluar si la diferencia observada fue significativa.
-
-# El análisis ayudó a reducir incertidumbre en la toma de decisiones.
-
-# Métricas Analizadas
-
-# Conversion Rate
-
-# Average Spend
-
-# Distribución por dispositivo
-
-# Segmentación por tráfico
-
-# Comportamiento por tipo de usuario
-
-# 🔄 Control de Versiones
-
-# 
-
-# Para el manejo profesional del proyecto se utilizó:
-
-# 
-
-# Git como sistema de control de versiones.
-
-# Git Bash para:
-
-# creación de commits,
-
-# seguimiento de cambios,
-
-# manejo del repositorio,
-
-# control de versiones local,
-
-# sincronización con GitHub.
-
-# 
-
-# Ejemplo de flujo utilizado:
-
-# 
-
-# git status
-
-# git add .
-
-# git commit -m "feat: análisis exploratorio inicial"
-
-# git push origin main
-
-# 📌 Mejoras Futuras
-
-# 
-
-# Posibles mejoras para siguientes versiones:
-
-# 
-
-# Automatización del pipeline.
-
-# Dashboard interactivo en Power BI.
-
-# Integración con SQL.
-
-# Testing automatizado.
-
-# Dockerización del proyecto.
-
-# Segmentación avanzada de usuarios.
-
-# Análisis bayesiano para A/B Testing.
-
-# 👨‍💻 Autor
-
-# JGO Gamer
-
-# GitHub: https://github.com/JacoboGO/Proyecto\_Landing\_Experiment
-
-# LinkedIn: www.linkedin.com/in/jacobo-galindo-ortiz
-
-# 
+(Nota: Asegurar la instalación de pandas, scipy, statsmodels, seaborn y matplotlib).  📈 Resultados e Insights ClaveCalidad de los Datos: El dataset cuenta con 40,000 observaciones sin registros duplicados en la variable user\_id, lo que valida los criterios de independencia para la aplicación de pruebas paramétricas y no paramétricas. El rango temporal analizado comprende del 1 de enero al 28 de enero de 2026.  Rendimiento de Conversión por Canales (Prueba Chi-Cuadrado): Se aplicó un test de independencia de Chi-cuadrado para correlacionar la conversión con las fuentes de tráfico (traffic\_source), obteniendo un estadístico de 8.662 y un p-valor de 0.034. Al ser inferior a nuestro nivel de significancia ($\\alpha = 0.05$), rechazamos la hipótesis nula, demostrando una relación estadísticamente significativa. Los canales de Email (14.99%) y Ads (14.74%) mostraron una eficiencia de conversión superior frente a los canales orgánicos.  Segmentación por Tipo de Usuario (Prueba Z-Test): La evaluación del comportamiento entre usuarios nuevos y recurrentes mediante un Z-test para proporciones dio un estadístico Z de 0.731 y un p-valor de 0.464. Esto indica que no hay evidencia estadística suficiente para afirmar que la veteranía del usuario afecte las tasas de conversión, por lo que esta variable se descarta como foco estratégico actual.  💻 Buenas Prácticas AplicadasControl de Versiones: Uso continuo de Git Bash para la gestión de ramas, confirmación de cambios (commits) seguros y mantenimiento del código fuente en entornos remotos.  Legibilidad y Estructura: Aplicación de buenas prácticas bajo estándares PEP8, modularizando el código con funciones genéricas reutilizables y estructurando el notebook mediante bloques metodológicos limpios.  🔮 Mejoras FuturasAutomatización del Pipeline: Configuración de un script automatizado para la re-evaluación estadística de nuevas cohortes de tráfico semanal de forma dinámica.Modelado Predictivo: Incorporar algoritmos de clasificación (ej., Regresión Logística o Random Forest) para predecir la probabilidad de gasto de un usuario en base a su región, dispositivo y canal de entrada de procedencia.👤 Autor y ContactoNombre: Jacobo Galindo Ortíz   Perfil: Ingeniero Químico \& Analista de Datos Industrial   GitHub: JacoboGOCorreo Profesional: ing\_j\_g\_ortiz@hotmail.com
 
