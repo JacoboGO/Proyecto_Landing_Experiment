@@ -1,0 +1,14 @@
+# ==============================================================================
+# INFRAESTRUCTURA DE DATOS - DEPENDENCIAS CORE DEL PROYECTO
+# ==============================================================================
+
+# Manipulación y Procesamiento de Datos de Alto Rendimiento
+pandas==3.0.2
+
+# Análisis Estadístico Avanzado y Experimentación (A/B Testing)
+scipy==1.17.1
+statsmodels==0.14.6
+
+# Visualización Científica y Exploratoria
+seaborn==0.13.2
+matplotlib==3.10.9
