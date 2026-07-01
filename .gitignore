@@ -1,3 +1,4 @@
+# Cache y compilados de Python
 __pycache__/
 *.pyc
 *.pyo
@@ -6,22 +7,29 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+# Entornos virtuales
 venv/
 env/
 .venv/
+
+# Formatos de datos masivos (Evita tracking en la nube)
 *.csv
 *.xlsx
 *.xls
 *.parquet
+*.json
+*.sqlite3
+
+#archivos de configuración de IDEs
+
 .DS_Store
 .vscode/
 .idea/
 *.swp
 *.swo
-.ipynd_checkpoints/
-*ipynd_checkpoints
-*.text=auto
-*.ipynd text eol=lf
-*.py text eol=lf
-*.md text eol=lf
-*.txt text eol=lf
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
